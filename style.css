@@ -1,0 +1,225 @@
+body {
+    background : linear-gradient(rgba(3, 244, 7, 0.614), rgba(243, 141, 141, 0.568))
+
+}
+h1{
+    text-align: center;
+    color: #131311d8;
+    height: 110px;
+    font-family: 'Great Vibes', cursive;
+    font-weight: 400;
+    font-size: 100px;
+    margin: 10px 0px 30px 0px;
+    background-color: #55585841 ;
+    border-radius: 20px;
+}
+
+h2{
+    text-align: center;
+}
+
+
+#Desarrollador-web{
+    text-align: center;
+    font-size: 45px;
+    font-weight: 200;
+    color: #0704af9c;
+    border: 10;
+    margin: 0;
+    font-style: oblique;
+    font-family: sans-serif;
+}
+#barra-colores-1{    
+    width: 740px;
+    height: 10px;
+    background-image: linear-gradient(90deg,#F6F72D, #F72D6A,#BC2DF7,#2DD3F7);
+    margin: 20px 0px 30px 2px;
+    border-radius: 20px;
+}
+
+.container2{
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: center;
+   align-items: center;
+}
+
+.lista1 {
+    font-size: 21px;
+    text-align: center;
+    list-style-type: none;
+    padding-left: 0;
+}
+.acerca_de_mi{
+    text-align: center;
+    font-size: 16px;
+}
+
+#barra-colores-2{    
+    width: 740px;
+    height: 2px;
+    background-image: linear-gradient(90deg,#F6F72D, #F72D6A,#BC2DF7,#2DD3F7);
+    margin: 10px 0px 10px 2px;
+    border-radius: 20px;
+}
+
+
+.Hard-Skills{
+    column-count: 3;
+    column-gap: 2px;
+    padding-inline-start: 0;
+}
+
+.circular-progress-1,.circular-progress-2,.circular-progress-3{
+    width: 160px;
+    height: 160px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+.outer-1,.outer-2,.outer-3{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+                -6px -6px 10px -1px rgba(255,255,255,0.7)
+}
+
+.inner-1,.inner-2,.inner-3{
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+                inset -4px -4px 6px -1px rgba(255,255,255,0.7),
+                -0,5px -0,5px 0px rgba(255,255,255,1),
+                0,5px 0.5px 0px rgba(0,0,0,0.15),
+                0px 12px 10px -10px rgba(0,0,0,0.2)
+}
+
+#number-3,#number-2,#number-1{
+    font-weight: 400;
+    font-size: 18px;
+    color: black;
+    text-align: center;
+}
+
+#circle-1{
+    fill: none;
+    stroke: url(#GradientColor-1);
+    stroke-width: 15px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+     
+    /** cuenta para sacar el porcentaje 472 - 472 x 0.65 (el porcentaje del circulo) = 165 (va abajo en keyframes)*/
+
+    animation: anim1 2s linear forwards;
+}
+
+#circle-2{
+    fill: none;
+    stroke: url(#GradientColor-2);
+    stroke-width: 15px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: anim2 2s linear forwards; 
+}
+
+#circle-3{
+    fill: none;
+    stroke: url(#GradientColor-3);
+    stroke-width: 15px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: anim3 2s linear forwards;
+}
+
+svg{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/** animacion del circulo de progreso*/
+@keyframes anim1{
+    100%{
+        stroke-dashoffset: 70;
+    }
+}
+
+@keyframes anim2{
+    100%{
+        stroke-dashoffset: 141;
+    }
+}
+
+@keyframes anim3{
+    100%{
+        stroke-dashoffset: 212;
+    }
+}
+
+#Contactar{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin: auto;
+    background-color: #dbe2e2d8;
+    font-style: oblique;
+    font-family: sans-serif;
+    font-size: 20px;
+    border-color: #5a5d5ed8;
+}
+
+#telefono{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    color: #071ca6;
+}
+#Contactar2{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    margin: auto;
+    background-color: #29f7f75e;
+    font-style: oblique;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    border-color: #380702ac;
+}
+#mail{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: #071ca6;}
+
+.nav-enlace{
+    display: inline-block;
+    background: rgba(196, 245, 122, 0.629);
+    color: black;
+    padding: 5px 15px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.nav-enlace:hover{
+    background: #2DD3F7;
+}
+
+nav{
+    background: #2bc9f041;
+    padding: 10px;
+    display: flex;
+    border-radius: 10px;
+    justify-content: space-around;
+}
