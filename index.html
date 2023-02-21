@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <title>Curriculum Vitae</title>
+</head>
+<body>
+    <header>
+        <h1>Jackson Horton</h1>
+    
+    <h2 id="Desarrollador-web">Desarrollador Web</h2>
+    </header>
+    <main>
+        <p id="barra-colores-1"></p>
+
+        <div class="container2">
+            <img class="imagenRandom" src="https://randomuser.me/api/portraits/men/11.jpg" width="200" height="200" alt="Imagen aleatoria.">
+            <ul class="lista1">
+                <li><strong>Nombre: </strong><em>Jackson Horton</em></li>
+                <li><strong>Fecha de nacimiento: </strong>11/5/1980
+                </li>
+                <li><strong>Ciudad donde vivo actualmente: </strong>8392 W Pecan St EEUU
+                </li>
+            </ul>
+            <p id="barra-colores-2"></p>
+            <h2>Acerca de Mi</h2>
+            <p class="acerca_de_mi">Mi nombre es Jackson y soy un apasionado por el ciclismo y su aventura descubriendo lugares fantasticos por recorrer entre amigos, en mis ratos libres suelo escuchar musica de los años 80´ acompañadado de mis mascotas, tengo amplia experiencia en el rubro desarrollador web y solidos conocimentos en tecnologias HTML, CSS y JavaScript</p>
+            <p id="barra-colores-2"></p>
+            <h2 class="historia">
+                Experiencias Laborales:
+            </h2>
+            <ul class="lista2">
+                <li> 2001-2006 Trabaje en una empresa distribuidora de alimentos ADECO en el sector mantenimiento preventivo.
+                </li>
+                <li>2006-2014 trabaje en atencion al cliente para la empresa Claro.
+                </li>
+                <li> 2014 a la fecha trabajo como tecnico en mantenimiento de redes y dispositivos para la empresa Claro.
+                </li>
+            </ul>
+
+            <p id="barra-colores-2"></p>
+            <h2 class="estudios">
+                Estudios Realizados:
+                </h2>
+            <ul class="lista3">
+                <li>Escuela Secundaria N°8 EET de Avellaneda entre los años 1994 y 2000.
+                </li>
+                <li>Curso virtual en freecodecamp de tecnologias HTML y CSS.
+                </li>
+                <li>Curso de fibra optica para tecnico instalador en campo.
+                </li>
+                <li>Curso de Diseño Grafico y Marketing Digital.
+                </li>
+            </ul>
+            <p id="barra-colores-2"></p>            
+            </div>
+
+        <h2><i class="fa-solid fa-laptop-code"></i> Hard Skills</h2>
+    
+    <div class="Hard-Skills">
+
+        <div class="circular-progress-1">
+            <div class="outer-1">
+                <div class="inner-1">
+                    <div id="number-1"><h3 id="idioma1">HTML</h3>99%</div>
+                </div>
+            </div>
+            <svg width="160px" height="160px">
+                <defs>
+                    <lineargradient id="GradientColor-1">
+                        <stop offset="0%" stop-color="#F6F72D"/>
+                        <stop offset="100%" stop-color="#F72D6A"/>
+                    </lineargradient>
+                </defs>
+                <circle id="circle-1" cx="80" cy="80" r="70" stroke-linecap="round" />
+            </svg>
+        </div>
+
+        <div class="circular-progress-2">
+            <div class="outer-2">
+                <div class="inner-2">
+                    <div id="number-2"><h3 id="idioma1">CSS</h3>70%</div>
+                </div>
+            </div>
+            <svg width="160px" height="160px">
+                <defs>
+                    <lineargradient id="GradientColor-2">
+                        <stop offset="0%" stop-color="#F72D6A"/>
+                        <stop offset="100%" stop-color="#BC2DF7"/>
+                    </lineargradient>
+                </defs>
+                <circle id="circle-2" cx="80" cy="80" r="70" stroke-linecap="round" />
+            </svg>
+        </div>
+
+        <div class="circular-progress-3">
+            <div class="outer-3">
+                <div class="inner-3">
+                    <div id="number-3"><h3 id="idioma1">JavaScript</h3>55%</div>
+                </div>
+            </div>
+            <svg width="160px" height="160px">
+                <defs>
+                    <lineargradient id="GradientColor-3">
+                        <stop offset="0%" stop-color="#3C2DF7"/>
+                        <stop offset="100%" stop-color="#2DD3F7"/>
+                    </lineargradient>
+                </defs>
+                <circle id="circle-3" cx="80" cy="80" r="70" stroke-linecap="round" />
+            </svg>
+        </div>
+    
+        </div>
+        
+
+    </main>
+
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio ratione velit at doloremque voluptas. Velit, deleniti adipisci perspiciatis impedit qui, est tempore quas quisquam eaque alias ipsa ipsam, porro soluta.</p>
+</body>
+
+<footer>
+    <p id="barra-colores-2"></p>
+  <nav>
+    <button id="Contactar" onclick="MostrarTelefono()">Telefono</button>
+    <p id="telefono"></p>
+
+    <button id="Contactar2" onclick="MostrarTelefono1()">Mail</button>
+    <p id="mail"></p>
+  </nav>
+  <p id="barra-colores-2"></p>
+  <nav>
+    <a href="#" class="nav-enlace">Inicio</a>
+    <a href="#" class="nav-enlace">Nosotros</a>
+    <a href="#" class="nav-enlace">Servicios</a>
+    <a href="#" class="nav-enlace">Contacto</a>
+</nav>
+
+    <script>
+         function MostrarTelefono(){
+            document.getElementById("telefono").innerHTML = "011-1234-2001";
+         }
+         function MostrarTelefono1(){
+            document.getElementById("telefono").innerHTML= "mariojs9265@gmail.com";
+         }    
+
+    </script>
+</footer>
+
+</html>
